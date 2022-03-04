@@ -23,6 +23,7 @@ const validateForm = () =>{
 
 }
 
+console.log(formSubmit)
 
 formSubmit.addEventListener("click", (event)=>{
 
@@ -33,6 +34,30 @@ formSubmit.addEventListener("click", (event)=>{
 
     window.location.href = `mailto:mks10685@gmail.com?subject=${subjectValue}&body=${messageValue}`
 })
+
+
+
+function handleIntersection(entries) {
+    entries.map((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+        } else {
+            entry.target.classList.remove('visible')
+        }
+    });
+}
+
+const observer = new IntersectionObserver(handleIntersection);
+
+const contact = document.querySelector('.contact');
+const skillListContainer = document.querySelector('.skills-list-container');
+
+
+observer.observe(skillListContainer);
+observer.observe(contact);
+
+
+
 
 
 
