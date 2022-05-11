@@ -23,7 +23,7 @@ const validateForm = () =>{
 
 }
 
-console.log(formSubmit)
+
 
 formSubmit.addEventListener("click", (event)=>{
 

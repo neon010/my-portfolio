@@ -6,58 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,500&family=Source+Code+Pro:wght@300;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Source+Code+Pro:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/assets/github.png" type="image/icon type">
+    <link rel="icon" href="/assets/icon-tab.svg" type="image/icon type">
     <title>Mohan Kumar</title>
 </head>
 <body>
     <header>
-        <div class="logo_container">
-            <h1 class="logo">M</h1>
-        </div>
-        <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_list_item">
-                    <a href="/" class="nav_list_item_link">Home</a>
-                </li>
-                <li class="nav_list_item">
-                    <a href="#project" class="nav_list_item_link">Project</a>
-                </li class="nav_list_item">
-                <li class="nav_list_item">
-                    <a href="#skill" class="nav_list_item_link">Skills</a>
-                </li>
-                <li class="nav_list_item">
-                    <a href="/pages/blog.html" class="nav_list_item_link">Blog</a>
-                </li>
-            </ul>
-        </nav>
+        <section class="header-container">
+            <div class="logo_container">
+                <img src="/assets/icon.svg" alt="logo" class="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_list_item">
+                        <a href="/" class="nav_list_item_link">Home</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="#project" class="nav_list_item_link">Project</a>
+                    </li class="nav_list_item">
+                    <li class="nav_list_item">
+                        <a href="#skill" class="nav_list_item_link">Skills</a>
+                    </li>
+                    <li class="nav_list_item">
+                        <a href="/pages/blog.html" class="nav_list_item_link">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
     </header>
     <main>
         <section class="intro">
-            <div class="intro_item">
-                <p class="intro_item-hello">
-                    <</> Hello, World />
-                </p>
-            </div>
-            <div class="intro_item">
-                <h2 class="intro_item-name">Mohan Kumar</h2>
-            </div>
-            <div class="intro_item">
-                <h4 class="intro_item-tag">I build cool things for the web</h4>
-            </div>
-            <div class="intro_item">
-                <p class="intro_item-para">
-                    I’m a software engineer specializing in building 
-                    (and occasionally designing) better User
-                    experiences.I am currently working for <a href="https://annexbyte.com/" target="_blank" class="company_title">AnnexByte</a> as 
-                    a NodeJs developer. I am here responsible for test driven development and integration of api
-                    
-                </p>
-            </div>
-            <div class="intro_item">
-                <button class="intro_item-button">Download CV</button>
-            </div>
+            <article>
+                <div class="intro_item">
+                    <p class="intro_item-hello">
+                        <</> Hello, World />
+                    </p>
+                </div>
+                <div class="intro_item">
+                    <h2 class="intro_item-name">Mohan Kumar</h2>
+                </div>
+                <div class="intro_item">
+                    <h4 class="intro_item-tag">I build cool things for the web</h4>
+                </div>
+                <div class="intro_item">
+                    <p class="intro_item-para">
+                        I’m a software engineer specializing in building 
+                        (and occasionally designing) better User
+                        experiences.I am currently working for <a href="https://annexbyte.com/" target="_blank" class="company_title">AnnexByte</a> as 
+                        a NodeJs developer. I am here responsible for test driven development and integration of api
+                        
+                    </p>
+                </div>
+                <div class="intro_item">
+                    <button class="intro_item-button">Download CV</button>
+                </div>
+            </article>
+            <aside>
+                <img src="/assets/ill.svg" alt="" class="moon">
+            </aside>
         </section>
         <section class="project" id="project">
             <div class="section__container-title">
@@ -133,7 +140,6 @@
                     <div class="project-tag">
                         <ul class="project-tag-list">
                             <li class="project-tag-list-item">JavaScript</li>
-                            <li class="project-tag-list-item">CSS</li>
                             <li class="project-tag-list-item">handlebars</li>
                             <li class="project-tag-list-item">NodeJs</li>
                         </ul>
@@ -299,19 +305,19 @@
         </section>
         <section class="skill" id="skill">
             <div class="skills-tag-container">
-                <h2 class="section-title">My Skills </h2>
+                <h2 class="section-title" id="my-skills-list">My Skills </h2>
             </div>
             <div class="skills-list-container">
-                <ul class="skills_list">
-                    <li class="skills_list-item">JavaScript</li>
-                    <li class="skills_list-item">Typescript</li>
-                    <li class="skills_list-item">NodeJs</li>
-                    <li class="skills_list-item">Python</li>
-                    <li class="skills_list-item">CSS</li>
-                    <li class="skills_list-item">React</li>
-                    <li class="skills_list-item">React Native</li>
-                    <li class="skills_list-item">MongoDB</li>
-                    <li class="skills_list-item">MySql</li>
+                <ul class="skills_list" role="listbox" aria-labelledby="my-skills-list">
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="1">JavaScript</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="2">Typescript</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="3">NodeJs</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="4">Python</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="5">CSS</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="6">React</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="7">React Native</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="8">MongoDB</li>
+                    <li class="skills_list-item" aria-setsize="9" aria-posinset="9">MySql</li>
                 </ul>
             </div>
         </section>
@@ -398,7 +404,7 @@
         </section>
     </main>
     <nav class="bottom-nav">
-        <div class="nav_list">
+        <div class="bottom-nav_list">
             <a href="/" class="nav_list_item_link">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" 
